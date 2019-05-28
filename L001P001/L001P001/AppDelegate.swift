@@ -15,6 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        /* UIWindow(frame: UIScreen.main.bounds) creates a UIWindow object
+         * with equivalent size as the iOS device’s screen (UIScreen)
+         */
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // We want to make some modifications (bkg), so let's create variable for View Controller
+        let vc = ViewController()
+        vc.view.backgroundColor = .red // Type inference. UIColor.red
+        
+        // nothing will be displayed if the rootViewController is unassigned
+        window?.rootViewController = vc
+        // makeKeyAndVisible() tells the window to show in the front-end
+        window?.makeKeyAndVisible()
+
         // Override point for customization after application launch.
         return true
     }
