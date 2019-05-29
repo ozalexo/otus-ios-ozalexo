@@ -8,14 +8,20 @@
 
 import UIKit
 
-class ColorButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+@IBDesignable final class ColorButton: UIButton {
+    
+    @IBInspectable var bgColor: UIColor = .white {
+        didSet {
+            backgroundColor = bgColor
+        }
     }
-    */
-
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+            // Q: What is that?
+            layer.masksToBounds = cornerRadius > 0
+        }
+    }
+    
 }
