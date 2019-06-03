@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A5742A0229ED3E600C0C11A /* ComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A57429F229ED3E600C0C11A /* ComponentView.xib */; };
+		1A5742A222A17FF700C0C11A /* ComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5742A122A17FF700C0C11A /* ComponentView.swift */; };
 		1AC5A572229DEEC100BDE387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5A571229DEEC100BDE387 /* AppDelegate.swift */; };
 		1AC5A574229DEEC100BDE387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5A573229DEEC100BDE387 /* ViewController.swift */; };
 		1AC5A577229DEEC100BDE387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5A575229DEEC100BDE387 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		1A57429F229ED3E600C0C11A /* ComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComponentView.xib; sourceTree = "<group>"; };
+		1A5742A122A17FF700C0C11A /* ComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentView.swift; sourceTree = "<group>"; };
 		1AC5A56E229DEEC100BDE387 /* L001P003.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L001P003.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC5A571229DEEC100BDE387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AC5A573229DEEC100BDE387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				1AC5A573229DEEC100BDE387 /* ViewController.swift */,
 				1AC5A575229DEEC100BDE387 /* Main.storyboard */,
 				1A57429F229ED3E600C0C11A /* ComponentView.xib */,
+				1A5742A122A17FF700C0C11A /* ComponentView.swift */,
 				1ACCDCDD229EBA2C001D7B48 /* ColorButton.swift */,
 				1AC5A578229DEEC200BDE387 /* Assets.xcassets */,
 				1AC5A57A229DEEC200BDE387 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5742A222A17FF700C0C11A /* ComponentView.swift in Sources */,
 				1ACCDCDE229EBA2C001D7B48 /* ColorButton.swift in Sources */,
 				1AC5A574229DEEC100BDE387 /* ViewController.swift in Sources */,
 				1AC5A572229DEEC100BDE387 /* AppDelegate.swift in Sources */,
