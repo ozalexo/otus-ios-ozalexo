@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		1A57429F229ED3E600C0C11A /* ComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComponentView.xib; sourceTree = "<group>"; };
 		1A5742A122A17FF700C0C11A /* ComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentView.swift; sourceTree = "<group>"; };
-		1AC5A56E229DEEC100BDE387 /* L001P003.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L001P003.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AC5A56E229DEEC100BDE387 /* L001P004.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L001P004.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC5A571229DEEC100BDE387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AC5A573229DEEC100BDE387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AC5A576229DEEC100BDE387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		1AC5A565229DEEC100BDE387 = {
 			isa = PBXGroup;
 			children = (
-				1AC5A570229DEEC100BDE387 /* L001P003 */,
+				1AC5A570229DEEC100BDE387 /* L001P004 */,
 				1AC5A56F229DEEC100BDE387 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		1AC5A56F229DEEC100BDE387 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1AC5A56E229DEEC100BDE387 /* L001P003.app */,
+				1AC5A56E229DEEC100BDE387 /* L001P004.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1AC5A570229DEEC100BDE387 /* L001P003 */ = {
+		1AC5A570229DEEC100BDE387 /* L001P004 */ = {
 			isa = PBXGroup;
 			children = (
 				1AC5A571229DEEC100BDE387 /* AppDelegate.swift */,
@@ -70,15 +70,15 @@
 				1AC5A57A229DEEC200BDE387 /* LaunchScreen.storyboard */,
 				1AC5A57D229DEEC200BDE387 /* Info.plist */,
 			);
-			path = L001P003;
+			path = L001P004;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1AC5A56D229DEEC100BDE387 /* L001P003 */ = {
+		1AC5A56D229DEEC100BDE387 /* L001P004 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1AC5A580229DEEC200BDE387 /* Build configuration list for PBXNativeTarget "L001P003" */;
+			buildConfigurationList = 1AC5A580229DEEC200BDE387 /* Build configuration list for PBXNativeTarget "L001P004" */;
 			buildPhases = (
 				1AC5A56A229DEEC100BDE387 /* Sources */,
 				1AC5A56B229DEEC100BDE387 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = L001P003;
+			name = L001P004;
 			productName = L001P002;
-			productReference = 1AC5A56E229DEEC100BDE387 /* L001P003.app */;
+			productReference = 1AC5A56E229DEEC100BDE387 /* L001P004.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1AC5A569229DEEC100BDE387 /* Build configuration list for PBXProject "L001P003" */;
+			buildConfigurationList = 1AC5A569229DEEC100BDE387 /* Build configuration list for PBXProject "L001P004" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1AC5A56D229DEEC100BDE387 /* L001P003 */,
+				1AC5A56D229DEEC100BDE387 /* L001P004 */,
 			);
 		};
 /* End PBXProject section */
@@ -296,12 +296,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2E99BVWU5T;
-				INFOPLIST_FILE = L001P003/Info.plist;
+				INFOPLIST_FILE = L001P004/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.L001P003;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.L001P004;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,12 +314,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2E99BVWU5T;
-				INFOPLIST_FILE = L001P003/Info.plist;
+				INFOPLIST_FILE = L001P004/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.L001P003;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.L001P004;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1AC5A569229DEEC100BDE387 /* Build configuration list for PBXProject "L001P003" */ = {
+		1AC5A569229DEEC100BDE387 /* Build configuration list for PBXProject "L001P004" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1AC5A57E229DEEC200BDE387 /* Debug */,
@@ -338,7 +338,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1AC5A580229DEEC200BDE387 /* Build configuration list for PBXNativeTarget "L001P003" */ = {
+		1AC5A580229DEEC200BDE387 /* Build configuration list for PBXNativeTarget "L001P004" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1AC5A581229DEEC200BDE387 /* Debug */,

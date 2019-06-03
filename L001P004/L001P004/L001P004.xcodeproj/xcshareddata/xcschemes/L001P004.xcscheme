@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1AC5A56D229DEEC100BDE387"
-               BuildableName = "L001P003.app"
-               BlueprintName = "L001P003"
-               ReferencedContainer = "container:L001P003.xcodeproj">
+               BuildableName = "L001P004.app"
+               BlueprintName = "L001P004"
+               ReferencedContainer = "container:L001P004.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AC5A56D229DEEC100BDE387"
-            BuildableName = "L001P003.app"
-            BlueprintName = "L001P003"
-            ReferencedContainer = "container:L001P003.xcodeproj">
+            BuildableName = "L001P004.app"
+            BlueprintName = "L001P004"
+            ReferencedContainer = "container:L001P004.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AC5A56D229DEEC100BDE387"
-            BuildableName = "L001P003.app"
-            BlueprintName = "L001P003"
-            ReferencedContainer = "container:L001P003.xcodeproj">
+            BuildableName = "L001P004.app"
+            BlueprintName = "L001P004"
+            ReferencedContainer = "container:L001P004.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1AC5A56D229DEEC100BDE387"
-            BuildableName = "L001P003.app"
-            BlueprintName = "L001P003"
-            ReferencedContainer = "container:L001P003.xcodeproj">
+            BuildableName = "L001P004.app"
+            BlueprintName = "L001P004"
+            ReferencedContainer = "container:L001P004.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
