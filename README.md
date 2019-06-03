@@ -1,4 +1,4 @@
-#Project structure
+# Project structure
 
 Each task and homework has its own branch. Each branch has its own README.md file with appropriate information.
 
