@@ -1,70 +1,20 @@
-# Lesson 001. Practice 003. XIB and Storybook.
+# Lesson 001. Practice 004. Storybook Reference.
 
 ## Steps to reproduce
 
-1. [x] Load project L001P002 to continue. [Rename project to L001P003](https://stackoverflow.com/a/35500038).
-2. [x] Add new View named 'CoponentView'
-3. [x] Modify it
-4. [x] Add Label component into ComponentView
-5. [x] Add Cocoa Touch Class file for the ComponentView
-       Name: ComponentView
-       Subclass of: UIView
-6. [x] Add the following code to the `ComponentView.swift`
-
-   ```swift
-   import UIKit
-
-   class ComponentView: UIView {
-
-      private weak var view: UIView?
-
-      override init(frame: CGRect) {
-         super.init(frame: frame)
-         configure()
-      }
-
-      required init?(coder aDecoder: NSCoder) {
-         super.init(coder: aDecoder)
-         configure()
-      }
-
-      func configure () {
-         let bundle = Bundle.main
-         let nib = bundle.loadNibNamed("ComponentView", owner: nil, options: nil)
-         if let view = nib?[0] as? UIView
-         {
-            self.view = view // Q: built successfully without this line. Why?
-            addSubview(view)
-         }
-      }
-
-   }
-   ```
-
-7. [x] Add `bgColor` custom property into class ComponentView (`ComponentView.swift` file):
-
-   ```swift
-    @IBInspectable var bgColor: UIColor = .white {
-        didSet {
-            view?.backgroundColor = bgColor
-        }
-    }
-   ```
+1. [x] Rename project `L001P003` into `L001P004`
+1. [x] Open `Main.storyboard`
+1. [x] Select second ViewController
+1. [x] Press `Editor -> Refactor to Storyboard...`
+1. [x] Name new storyboard as `Detail.storyboard` and press `Save` button
+1. [x] New reference will be created and `Detail.storyboard` will be shown
 
 - Result:
-  :white_check_mark: Git repo: https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/001/Practice/003_XIB_and_Storyboard
+  :white_check_mark: Git repo: https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/001/Practice/004_StoryboardReference
 
 ## Questions
 
-:question: Why we've set Simuated Metrics -> Size to `Freeform`?
-
-:question: Other ways to obtain main bundle?
-
-:question: What is bundle in context of `ComponentView.swift`?
-
 ## Additional information
-
-:information_source:
 
 ## Other
 
