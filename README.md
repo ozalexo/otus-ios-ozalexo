@@ -1,6 +1,6 @@
 #Project structure
 
-Each task and homework has its own branch.
+Each task and homework has its own branch. Each branch has its own README.md file with appropriate information.
 
 * Tasks: Lesson / <Number_of_lesson> / Practice / <Nu,ber_of_task>
 * Homeworks: Lesson / <Number_of_lesson> / Homework
