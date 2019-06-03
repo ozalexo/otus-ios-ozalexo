@@ -9,10 +9,10 @@ Each task and homework has its own branch. Each branch has its own README.md fil
 Lesson
 ├── 001
 │   ├── Practice
-│   │   ├── 001            // https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/001/Practice/001
-│   │   ├── 002_Storyboard // https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/001/Practice/002_Storyboard
-│   │   ├── 003
-│   │   └── 004
+│   │   ├── 001                     // https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/001/Practice/001
+│   │   ├── 002_Storyboard          // https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/001/Practice/002_Storyboard
+│   │   ├── 003_XIB_and_Storyboard  // https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/001/Practice/003_XIB_and_Storyboard
+│   │   └── 004_StoryboardReference // https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/001/Practice/004_StoryboardReference
 │   └── Homework           // https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/001/Homework
 └── 002
     ├── Practice
