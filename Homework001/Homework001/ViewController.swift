@@ -8,16 +8,7 @@
 
 import UIKit
 
-class BenchmarkTabVC: UIViewController {
-    
-    @IBAction func displayAlert(_ sender: UIButton) {
-        // copy-paste from https://www.ioscreator.com/tutorials/display-alert-ios-tutorial
-        let alertController = UIAlertController(title: "Homework001", message:
-            "No benchmark available!", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-        
-        self.present(alertController, animated: true, completion: nil)
-    }
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -172,7 +172,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Start benchmark"/>
                                 <connections>
-                                    <action selector="displayAlert:" destination="pkp-gF-qHO" eventType="touchUpInside" id="2Dr-Pw-blX"/>
+                                    <action selector="showAlert:" destination="pkp-gF-qHO" eventType="touchUpInside" id="sJ8-rs-nJf"/>
                                 </connections>
                             </button>
                         </subviews>

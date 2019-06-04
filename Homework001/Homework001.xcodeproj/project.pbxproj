@@ -12,7 +12,7 @@
 		1A64355622A5D3AB0049376E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A64355422A5D3AB0049376E /* Main.storyboard */; };
 		1A64355822A5D3AC0049376E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A64355722A5D3AC0049376E /* Assets.xcassets */; };
 		1A64355B22A5D3AC0049376E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A64355922A5D3AC0049376E /* LaunchScreen.storyboard */; };
-		1A64356322A5ECFC0049376E /* BenchmarkTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64356222A5ECFC0049376E /* BenchmarkTab.swift */; };
+		1A64356722A5EEB30049376E /* BenchmarkTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64356622A5EEB30049376E /* BenchmarkTabVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		1A64355722A5D3AC0049376E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A64355A22A5D3AC0049376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A64355C22A5D3AC0049376E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A64356222A5ECFC0049376E /* BenchmarkTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkTab.swift; sourceTree = "<group>"; };
+		1A64356622A5EEB30049376E /* BenchmarkTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkTabVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 		1A64354F22A5D3AB0049376E /* Homework001 */ = {
 			isa = PBXGroup;
 			children = (
+				1A64356622A5EEB30049376E /* BenchmarkTabVC.swift */,
 				1A64355022A5D3AB0049376E /* AppDelegate.swift */,
 				1A64355222A5D3AB0049376E /* ViewController.swift */,
 				1A64355422A5D3AB0049376E /* Main.storyboard */,
-				1A64356222A5ECFC0049376E /* BenchmarkTab.swift */,
 				1A64355722A5D3AC0049376E /* Assets.xcassets */,
 				1A64355922A5D3AC0049376E /* LaunchScreen.storyboard */,
 				1A64355C22A5D3AC0049376E /* Info.plist */,
@@ -140,7 +140,7 @@
 			files = (
 				1A64355322A5D3AB0049376E /* ViewController.swift in Sources */,
 				1A64355122A5D3AB0049376E /* AppDelegate.swift in Sources */,
-				1A64356322A5ECFC0049376E /* BenchmarkTab.swift in Sources */,
+				1A64356722A5EEB30049376E /* BenchmarkTabVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
