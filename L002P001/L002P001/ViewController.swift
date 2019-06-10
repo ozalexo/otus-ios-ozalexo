@@ -15,6 +15,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func ExitApp(_ sender: UIButton) {
+        print(#function)
+        // Calling 'exit' is very bad way to exit (aka crash)
+        // exit(-1)
+       
+        // Other ways also not welcome by Apple. Use 'Home' button or appropriate swipe gesture instead.
+        UIControl().sendAction(
+            #selector(URLSessionTask.suspend),
+            to: UIApplication.shared,
+            for: nil)
+    }
 }
 
