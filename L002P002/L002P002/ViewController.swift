@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         print(#function)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // Here we may start an animation
+    }
+
     @IBAction func ExitApp(_ sender: UIButton) {
         print(#function)
         // Calling 'exit' is very bad way to exit (aka crash)
