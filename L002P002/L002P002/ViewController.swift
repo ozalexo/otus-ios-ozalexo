@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    override func loadView() {
+        super.loadView()
+        print(#function)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(#function)
     }
 
     @IBAction func ExitApp(_ sender: UIButton) {
