@@ -15,6 +15,38 @@
 * Result:
   :white_check_mark: Git repo: https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/002/Homework
 
+## Practice 002
+
+### Steps
+
+- [x] Renamed project L002P001 -> L002P002
+- [x] ViewController: methods `loadView` and `viewDidLoad`
+   :question: Webinar 02: 00:31:20 - 00:31:35. Method `loadView` has been called with StoryBoard. So, is it called or not?
+   Logs:
+   ```
+   application(_:willFinishLaunchingWithOptions:)
+   No options
+   application(_:didFinishLaunchingWithOptions:)
+   No options
+   loadView()
+   viewDidLoad()
+   viewWillAppear(_:)
+   viewDidAppear(_:)
+   applicationDidBecomeActive(_:)
+   ```
+   Commit: https://github.com/ozalexo/otus-ios-ozalexo/commit/260647f64d385997a3541bdf63430d89e6b6ced1
+- [x] Added methods viewWillAppear and viewDidAppear
+   :question: If we don't use Storyboard and we have `view = UIView(frame: UIScreen.main.bounds)` in the `loadView`,
+   then this is all what we need or some additional actions requred?
+- [x] Added methods viewWillDisappear and viewDidDisappear
+   :question: Can't see traces from `viewWillDisappear` and `viewDidDisappear` in the app with single ViewController (tried to hide app in simulator).
+   **Answer**: we need other View to overlap oir View.
+- [x] Added NavigationController and second ViewController
+- [x] Added methods `viewWillLayoutSubviews` and `viewDidLayoutSubviews`:
+   :question: Methods have been called on display View, on device rotate (each method called twice, why?). Anything else?
+### Questions
+
+
 ## Practice 001
 
 ### Steps
