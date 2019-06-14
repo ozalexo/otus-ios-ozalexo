@@ -41,6 +41,16 @@ class ViewController: UIViewController {
         print(#function)
     }
 
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        print(#function)
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        print(#function)
+    }
+
     @IBAction func ExitApp(_ sender: UIButton) {
         print(#function)
         // Calling 'exit' is very bad way to exit (aka crash)
