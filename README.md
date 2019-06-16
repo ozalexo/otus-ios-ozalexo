@@ -15,6 +15,18 @@
 * Result:
   :white_check_mark: Git repo: https://github.com/ozalexo/otus-ios-ozalexo/tree/Lesson/002/Homework
 
+## Practice 003
+
+### Steps
+
+- [x] Renamed project L002P002 -> L002P003
+- [x] Copied ViewControllerLifecycleBehavior.swift file
+- [x] Removed debug traces and LC methods
+   :question: Webinar 02:52:30 - 00:54:30. Behavior incapsulated into ViewController. Which one has highest priority? For example: what if parent VC want to display NavBar and its child VCBehavior want to hide NavBar?
+- [x] Renave ViewController to RootViewController. Create SecondViewController. Assign VCs on Storyboard to appropriate classes
+- [x] Add button "Return back" to the SecondViewController
+- [x] Create some structure folders in the project and move files into these folders (groups). Configure project to use new location of Info.plist file
+
 ## Practice 002
 
 ### Steps
