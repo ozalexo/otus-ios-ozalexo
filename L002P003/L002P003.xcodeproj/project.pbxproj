@@ -64,6 +64,14 @@
 			path = Startup;
 			sourceTree = "<group>";
 		};
+		1A806DE322B691820096F69E /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				1A100C2A22B3C6CE000E3838 /* ViewControllerLifecycleBehavior.swift */,
+			);
+			path = Behavior;
+			sourceTree = "<group>";
+		};
 		1AB8684F22AE4CFE00A0C657 = {
 			isa = PBXGroup;
 			children = (
@@ -83,10 +91,10 @@
 		1AB8685A22AE4CFE00A0C657 /* L002P003 */ = {
 			isa = PBXGroup;
 			children = (
-				1AB8685D22AE4CFE00A0C657 /* SecondViewController.swift */,
-				1A100C2A22B3C6CE000E3838 /* ViewControllerLifecycleBehavior.swift */,
+				1A806DE322B691820096F69E /* Behavior */,
 				1AB8685F22AE4CFE00A0C657 /* Main.storyboard */,
 				1A806DDE22B3CD4B0096F69E /* RootViewController.swift */,
+				1AB8685D22AE4CFE00A0C657 /* SecondViewController.swift */,
 				1A806DE222B3CFC30096F69E /* Startup */,
 				1A806DE122B3CFA50096F69E /* Resources */,
 				1A806DE022B3CF870096F69E /* Supporting Files */,
