@@ -10,7 +10,34 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World")
+        TabbedView {
+            NavigationView {
+                Text("Feed").font(.title)
+            }
+            .tabItemLabel(VStack {
+                Image("feed" )
+                Text("Feed")
+            })
+            .tag(0)
+
+            NavigationView {
+                Text("Benchmark").font(.title)
+                }
+                .tabItemLabel(VStack {
+                    Image("speed" )
+                    Text("Benchmark")
+                })
+                .tag(1)
+            
+            NavigationView {
+                Text("Profile").font(.title)
+                }
+                .tabItemLabel(VStack {
+                    Image("profile" )
+                    Text("Profile")
+                })
+                .tag(2)
+        }
     }
 }
 
