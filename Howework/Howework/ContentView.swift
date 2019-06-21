@@ -9,33 +9,36 @@
 import SwiftUI
 
 struct ContentView : View {
+    
+    @State private var selection = 0
+    
     var body: some View {
-        TabbedView {
-            NavigationView {
-                Text("Feed").font(.title)
-            }
-            .tabItemLabel(VStack {
-                Image("feed" )
-                Text("Feed")
-            })
-            .tag(0)
+        TabbedView(selection: $selection) {
+            Feed()
+                .tabItemLabel(
+                    VStack {
+                        Image("feed")
+                        Text("Feed")
+                    }
+                )
+                .tag(0)
 
-            NavigationView {
-                Text("Benchmark").font(.title)
-                }
-                .tabItemLabel(VStack {
-                    Image("speed" )
-                    Text("Benchmark")
-                })
+            Benchmark()
+                .tabItemLabel(
+                    VStack {
+                        Image("speed" )
+                        Text("Benchmark")
+                    }
+                )
                 .tag(1)
-            
-            NavigationView {
-                Text("Profile").font(.title)
-                }
-                .tabItemLabel(VStack {
-                    Image("profile" )
-                    Text("Profile")
-                })
+
+           Profile()
+                .tabItemLabel(
+                    VStack {
+                        Image("profile" )
+                        Text("Profile")
+                    }
+                )
                 .tag(2)
         }
     }
