@@ -1,45 +1,55 @@
-let metaType = String.self
-let dynMetaType = type(of: "")
+import Foundation
 
-let date = "2019"
-if type(of: date) == String.self {
-    print("This is String.")
-}
+var start: CFAbsoluteTime!
+var finish: CFAbsoluteTime!
+var ncVar: String? = "a"
+var obVar: String? = "b"
+var guardVar: String? = "c"
 
+let measurementCount = 100000
 
-// Struct as type
-
-struct TestStruct {
-    var i: Int
-    var s: String
-}
-var metaStructType = TestStruct.self // __lldb_expr_13.TestStruct.Type
-TestStruct.self // __lldb_expr_13.TestStruct.Type
-
-var newVar = TestStruct(i: 10, s: "fggg")
-
-if type(of: newVar) == TestStruct.self {
-    print("This is TestStruct")
-} else {
-    print("Need to google it: how to check complex types?")
-}
-
-// Class as type
-
-class TestClass {
-    var i: Int
-    var s: String
-    init() {
-        i = 10
-        s = "rrr"
+func measureNilCoalescing () {
+    for _ in 0...measurementCount {
+        var resA = ncVar ?? "altA"
     }
 }
-print(TestClass.self)
 
-var newClassVar = TestClass()
+func measureOptionalBinding () {
+    for _ in 0...measurementCount {
+        if var resB = obVar {
 
-if type(of: newClassVar) == TestClass.self {
-    print("This is TestClass")
-} else {
-    print("Need to google it: how to check if a var of a class instance?")
+        } else {
+            var resB = "altB"
+        }
+    }
 }
+
+func measureGuard () {
+    for _ in 0...measurementCount {
+        guard var resC = guardVar else { return }
+        resC = "altC"
+    }
+}
+
+// Measure nil-coalescing
+start = CFAbsoluteTimeGetCurrent()
+measureNilCoalescing()
+finish = CFAbsoluteTimeGetCurrent()
+let ncDiff = String(format: "%.8f", finish - start)
+
+// Measure guard
+start = CFAbsoluteTimeGetCurrent()
+measureGuard()
+finish = CFAbsoluteTimeGetCurrent()
+let guardDiff = String(format: "%.8f", finish - start)
+
+// Measure optional binding
+start = CFAbsoluteTimeGetCurrent()
+measureOptionalBinding()
+finish = CFAbsoluteTimeGetCurrent()
+let obDiff = String(format: "%.8f", finish - start)
+
+// Display results
+print("  Nil coalescing took \(ncDiff) seconds")
+print("Optional binding took \(obDiff) seconds")
+print("           Guard took \(guardDiff) seconds")
