@@ -36,12 +36,22 @@ final class LinkedList<K, V> where K:Equatable {
         return nil
     }
 
+    private func getLastNode () -> Node<K, V> {
+        var curr = fakeHead
+        while curr.next != nil {
+            curr = curr.next!
+        }
+        return curr
+    }
+
+
     // Create
     func add(key: K, value: V) {
         if let node = getNode(key: key) {
             node.value = value
         } else {
-            fakeHead.next = Node<K, V>.init(key: key, value: value, next: fakeHead.next)
+            var lastNode = getLastNode()
+            lastNode.next = Node<K, V>.init(key: key, value: value, next: nil)
             _size += 1
         }
     }
@@ -99,14 +109,29 @@ extension LinkedList: CustomStringConvertible {
         for _ in 0 ..< _size {
             node = node?.next
             if let n = node {
-                str.append("\(n) 🔑 ")
+                str.append("\(n) 🔑\n")
             }
         }
-        return str
+        return "$ Whole list size is \(_size):\n\(str)"
     }
 }
 
 
 let list = LinkedList<Int, String>()
-list.add(key: 3, value: "3tewst")
+print(list)
+list.add(key: 3, value: "3ggg")
+list.add(key: 4, value: "4fff")
+list.add(key: 8, value: "8www")
+print(list)
+
+// Now delete smth in the middle of the list
+list.remove(key: 4)
+print(list)
+
+// Now delete smth at the end of the list
+list.remove(key: 8)
+print(list)
+
+// And append back
+list.add(key: 4, value: "4fff")
 print(list)
