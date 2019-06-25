@@ -63,14 +63,16 @@ final class LinkedList<K, V> where K:Equatable {
     // Delete
     func remove(key: K) -> V? {
         var next: Node<K, V>? = fakeHead
-        while next.next != nil {
-            if let nodeKey = next.next?.key {
+
+        while next?.next != nil {
+            if let nodeKey = next?.next?.key {
                 if nodeKey == key {
                     break
                 }
             }
             next = next?.next
         }
+
         if next?.next != nil {
             let delNode = next?.next
             next?.next = delNode?.next
@@ -78,6 +80,7 @@ final class LinkedList<K, V> where K:Equatable {
             _size -= 1
             return delNode?.value
         }
+
         return nil
     }
 }
