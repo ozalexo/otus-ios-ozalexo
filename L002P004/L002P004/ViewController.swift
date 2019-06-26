@@ -10,11 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var textFieldOne: UITextField!
+    @IBOutlet var textFieldTwo: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func next() {
+        if (!textFieldOne.isFirstResponder && !textFieldTwo.isFirstResponder) {
+            print("Initial fR")
+            textFieldOne.becomeFirstResponder()
+        } else if textFieldOne.isFirstResponder {
+            print("one -> two fR")
+            textFieldOne.resignFirstResponder()
+            textFieldTwo.becomeFirstResponder()
+        } else {
+            print("two -> one fR")
+            textFieldTwo.resignFirstResponder()
+            textFieldOne.becomeFirstResponder()
 
+        }
+    }
 }
 
