@@ -36,7 +36,8 @@ class ViewController: UIViewController {
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else { return }
-        print(touch.preciseLocation(in: view))
+        textFieldOne.center = touch.location(in: view)
     }
+
 }
 
