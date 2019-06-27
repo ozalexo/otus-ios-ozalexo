@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yst-vZ-AcM">
-                                <rect key="frame" x="187" y="143" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yst-vZ-AcM">
+                                <rect key="frame" x="186.5" y="128" width="41" height="30"/>
                                 <state key="normal" title="VC1 &gt;"/>
                                 <connections>
                                     <segue destination="Cp4-Q0-JQv" kind="push" id="XSQ-US-aaT"/>
@@ -25,6 +24,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yst-vZ-AcM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="7aG-2t-OBT"/>
+                            <constraint firstItem="Yst-vZ-AcM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dUd-fu-FdE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="VC1" id="MBQ-hz-PVi"/>
@@ -57,9 +60,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbu-it-o97">
-                                <rect key="frame" x="186" y="126" width="43" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbu-it-o97">
+                                <rect key="frame" x="185.5" y="128" width="43" height="30"/>
                                 <state key="normal" title="VC3 &gt;"/>
                                 <connections>
                                     <segue destination="04g-oV-DWQ" kind="push" id="sjw-GK-C8s"/>
@@ -72,6 +74,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vbu-it-o97" firstAttribute="top" secondItem="D5D-X5-Xri" secondAttribute="top" constant="40" id="f9P-7v-UAZ"/>
+                            <constraint firstItem="Vbu-it-o97" firstAttribute="centerX" secondItem="AJR-rI-0aW" secondAttribute="centerX" id="kOA-VL-OTr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="D5D-X5-Xri"/>
                     </view>
                     <navigationItem key="navigationItem" title="VC2" id="Tcw-fY-BDo"/>
@@ -83,23 +89,32 @@
         <!--VC3-->
         <scene sceneID="YQE-yh-ilD">
             <objects>
-                <viewController id="04g-oV-DWQ" sceneMemberID="viewController">
+                <viewController id="04g-oV-DWQ" customClass="VC3ViewController" customModule="L002P005" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B24-HD-o6n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc7-LS-NnC">
-                                <rect key="frame" x="186" y="132" width="43" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc7-LS-NnC">
+                                <rect key="frame" x="185.5" y="128" width="43" height="30"/>
                                 <state key="normal" title="&lt; VC2"/>
+                                <connections>
+                                    <action selector="pop" destination="04g-oV-DWQ" eventType="touchUpInside" id="qYZ-yb-hTx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8z-gi-FjH">
                                 <rect key="frame" x="184" y="201" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="&lt; Root"/>
+                                <connections>
+                                    <action selector="popToRoot" destination="04g-oV-DWQ" eventType="touchUpInside" id="39F-aU-Q0x"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hc7-LS-NnC" firstAttribute="top" secondItem="hHq-ex-jFs" secondAttribute="top" constant="40" id="JBn-8b-7ja"/>
+                            <constraint firstItem="hc7-LS-NnC" firstAttribute="centerX" secondItem="B24-HD-o6n" secondAttribute="centerX" id="Q93-fH-Y45"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hHq-ex-jFs"/>
                     </view>
                     <navigationItem key="navigationItem" title="VC3" id="QgP-mf-5M9"/>

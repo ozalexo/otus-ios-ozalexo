@@ -13,6 +13,8 @@
 		1AC5F06F22C4454400B2CFC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5F06D22C4454400B2CFC9 /* Main.storyboard */; };
 		1AC5F07122C4454500B2CFC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5F07022C4454500B2CFC9 /* Assets.xcassets */; };
 		1AC5F07422C4454500B2CFC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5F07222C4454500B2CFC9 /* LaunchScreen.storyboard */; };
+		1AC5F07C22C44BC400B2CFC9 /* VC2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5F07B22C44BC400B2CFC9 /* VC2ViewController.swift */; };
+		1AC5F07E22C44BE300B2CFC9 /* VC3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC5F07D22C44BE300B2CFC9 /* VC3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1AC5F07022C4454500B2CFC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AC5F07322C4454500B2CFC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AC5F07522C4454500B2CFC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC5F07B22C44BC400B2CFC9 /* VC2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2ViewController.swift; sourceTree = "<group>"; };
+		1AC5F07D22C44BE300B2CFC9 /* VC3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				1AC5F07022C4454500B2CFC9 /* Assets.xcassets */,
 				1AC5F07222C4454500B2CFC9 /* LaunchScreen.storyboard */,
 				1AC5F07522C4454500B2CFC9 /* Info.plist */,
+				1AC5F07B22C44BC400B2CFC9 /* VC2ViewController.swift */,
+				1AC5F07D22C44BE300B2CFC9 /* VC3ViewController.swift */,
 			);
 			path = L002P005;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC5F07C22C44BC400B2CFC9 /* VC2ViewController.swift in Sources */,
 				1AC5F06C22C4454400B2CFC9 /* ViewController.swift in Sources */,
+				1AC5F07E22C44BE300B2CFC9 /* VC3ViewController.swift in Sources */,
 				1AC5F06822C4454400B2CFC9 /* AppDelegate.swift in Sources */,
 				1AC5F06A22C4454400B2CFC9 /* SceneDelegate.swift in Sources */,
 			);
