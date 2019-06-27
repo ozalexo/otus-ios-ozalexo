@@ -1,5 +1,5 @@
 //
-//  VC3ViewController.swift
+//  VC2ViewController.swift
 //  L002P005
 //
 //  Created by Alexey Ozerov on 27.06.2019.
@@ -8,43 +8,33 @@
 
 import UIKit
 
-class VC3ViewController: UIViewController {
-
-    var shouldPop2: Bool = false
+class VC2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-
-        if shouldPop2 {
-            if let controllers = navigationController?.viewControllers {
-                let newControllers = controllers.filter { !($0 is VC2ViewController) }
-                navigationController?.setViewControllers(newControllers, animated: true)
-            }
-        }
     }
-    
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        guard segue.identifier == "withRemove",
+            let vc = segue.destination as? VC3ViewController else {
+                return
+        }
+        vc.shouldPop2 = true
     }
-    */
+
+    @IBAction func pushWithRemoveFromStack () {
+        
+    }
 
     @IBAction func pop () {
         navigationController?.popViewController(animated: true)
     }
 
-//    @IBAction func push () {
-//        navigationController?.pushViewController(VC2ViewController, animated: true)
-//    }
-
-    @IBAction func popToRoot () {
-        navigationController?.popToRootViewController(animated: true)
-    }
 }

@@ -55,7 +55,7 @@
         <!--VC2-->
         <scene sceneID="VJH-7R-sZ2">
             <objects>
-                <viewController id="Cp4-Q0-JQv" sceneMemberID="viewController">
+                <viewController id="Cp4-Q0-JQv" customClass="VC2ViewController" customModule="L002P005" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AJR-rI-0aW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,17 @@
                                 <rect key="frame" x="187" y="194" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="&lt; VC1"/>
+                                <connections>
+                                    <action selector="pop" destination="Cp4-Q0-JQv" eventType="touchUpInside" id="iJz-gb-uRo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBI-Nn-6m5">
+                                <rect key="frame" x="127" y="269" width="160" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="VC3 and remove VC2 &gt;"/>
+                                <connections>
+                                    <segue destination="04g-oV-DWQ" kind="push" identifier="withRemove" id="Kxa-t2-qaJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -124,4 +135,7 @@
             <point key="canvasLocation" x="1852" y="12"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Kxa-t2-qaJ"/>
+    </inferredMetricsTieBreakers>
 </document>
