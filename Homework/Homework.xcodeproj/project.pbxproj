@@ -12,11 +12,13 @@
 		1A64355622A5D3AB0049376E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A64355422A5D3AB0049376E /* Main.storyboard */; };
 		1A64355822A5D3AC0049376E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A64355722A5D3AC0049376E /* Assets.xcassets */; };
 		1A64355B22A5D3AC0049376E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A64355922A5D3AC0049376E /* LaunchScreen.storyboard */; };
-		1A64356722A5EEB30049376E /* BenchmarkTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64356622A5EEB30049376E /* BenchmarkTabVC.swift */; };
+		1A64356722A5EEB30049376E /* BenchmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64356622A5EEB30049376E /* BenchmarkController.swift */; };
 		1A64356922A5F0D00049376E /* CustomProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A64356822A5F0D00049376E /* CustomProfileButton.swift */; };
 		1A64357322A5FFC70049376E /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A64357122A5FFC70049376E /* Details.storyboard */; };
 		1AE9206922A6074E009D418C /* TestXibComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE9206822A6074E009D418C /* TestXibComponent.xib */; };
 		1AE9206B22A6079E009D418C /* TestXibComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9206A22A6079E009D418C /* TestXibComponent.swift */; };
+		1AF30C8D22C6CE8A00DA30B4 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF30C8C22C6CE8A00DA30B4 /* ProfileController.swift */; };
+		1AF30C8F22C6CEBA00DA30B4 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF30C8E22C6CEBA00DA30B4 /* FeedController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +29,13 @@
 		1A64355722A5D3AC0049376E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A64355A22A5D3AC0049376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A64355C22A5D3AC0049376E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A64356622A5EEB30049376E /* BenchmarkTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkTabVC.swift; sourceTree = "<group>"; };
+		1A64356622A5EEB30049376E /* BenchmarkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkController.swift; sourceTree = "<group>"; };
 		1A64356822A5F0D00049376E /* CustomProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProfileButton.swift; sourceTree = "<group>"; };
 		1A64357222A5FFC70049376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Homework/Base.lproj/Details.storyboard; sourceTree = "<group>"; };
 		1AE9206822A6074E009D418C /* TestXibComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibComponent.xib; sourceTree = "<group>"; };
 		1AE9206A22A6079E009D418C /* TestXibComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibComponent.swift; sourceTree = "<group>"; };
+		1AF30C8C22C6CE8A00DA30B4 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		1AF30C8E22C6CEBA00DA30B4 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,8 @@
 		1A64354F22A5D3AB0049376E /* Homework */ = {
 			isa = PBXGroup;
 			children = (
-				1A64356622A5EEB30049376E /* BenchmarkTabVC.swift */,
+				1AB9365E22C6BE9900B25E59 /* Controllers */,
 				1A64355022A5D3AB0049376E /* AppDelegate.swift */,
-				1A64355222A5D3AB0049376E /* ViewController.swift */,
 				1A64355422A5D3AB0049376E /* Main.storyboard */,
 				1A64357122A5FFC70049376E /* Details.storyboard */,
 				1AE9206822A6074E009D418C /* TestXibComponent.xib */,
@@ -77,6 +80,17 @@
 				1A64355C22A5D3AC0049376E /* Info.plist */,
 			);
 			path = Homework;
+			sourceTree = "<group>";
+		};
+		1AB9365E22C6BE9900B25E59 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AF30C8E22C6CEBA00DA30B4 /* FeedController.swift */,
+				1A64356622A5EEB30049376E /* BenchmarkController.swift */,
+				1AF30C8C22C6CE8A00DA30B4 /* ProfileController.swift */,
+				1A64355222A5D3AB0049376E /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +170,9 @@
 				1A64355122A5D3AB0049376E /* AppDelegate.swift in Sources */,
 				1AE9206B22A6079E009D418C /* TestXibComponent.swift in Sources */,
 				1A64356922A5F0D00049376E /* CustomProfileButton.swift in Sources */,
-				1A64356722A5EEB30049376E /* BenchmarkTabVC.swift in Sources */,
+				1A64356722A5EEB30049376E /* BenchmarkController.swift in Sources */,
+				1AF30C8D22C6CE8A00DA30B4 /* ProfileController.swift in Sources */,
+				1AF30C8F22C6CEBA00DA30B4 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
