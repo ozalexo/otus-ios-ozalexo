@@ -1,6 +1,6 @@
 //
 //  BenchmarkTabVC.swift
-//  Homework001
+//  Homework
 //
 //  Created by Alexey Ozerov on 04/06/2019.
 //  Copyright © 2019 Alexey Ozerov. All rights reserved.
@@ -13,7 +13,7 @@ class BenchmarkTabVC: UIViewController {
     @IBAction func showAlert(_ sender: Any) {
         // copy-paste from https://www.ioscreator.com/tutorials/display-alert-ios-tutorial
         let alertController = UIAlertController(
-            title: "Homework001",
+            title: "Homework",
             message: "No benchmark available!",
             preferredStyle: .alert
         )

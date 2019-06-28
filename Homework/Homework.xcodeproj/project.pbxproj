@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A64354D22A5D3AB0049376E /* Homework001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework001.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A64354D22A5D3AB0049376E /* Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A64355022A5D3AB0049376E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A64355222A5D3AB0049376E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A64355522A5D3AB0049376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,7 +29,7 @@
 		1A64355C22A5D3AC0049376E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A64356622A5EEB30049376E /* BenchmarkTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkTabVC.swift; sourceTree = "<group>"; };
 		1A64356822A5F0D00049376E /* CustomProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProfileButton.swift; sourceTree = "<group>"; };
-		1A64357222A5FFC70049376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Homework001/Base.lproj/Details.storyboard; sourceTree = "<group>"; };
+		1A64357222A5FFC70049376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Homework/Base.lproj/Details.storyboard; sourceTree = "<group>"; };
 		1AE9206822A6074E009D418C /* TestXibComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibComponent.xib; sourceTree = "<group>"; };
 		1AE9206A22A6079E009D418C /* TestXibComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +48,7 @@
 		1A64354422A5D3AB0049376E = {
 			isa = PBXGroup;
 			children = (
-				1A64354F22A5D3AB0049376E /* Homework001 */,
+				1A64354F22A5D3AB0049376E /* Homework */,
 				1A64354E22A5D3AB0049376E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 		1A64354E22A5D3AB0049376E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A64354D22A5D3AB0049376E /* Homework001.app */,
+				1A64354D22A5D3AB0049376E /* Homework.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A64354F22A5D3AB0049376E /* Homework001 */ = {
+		1A64354F22A5D3AB0049376E /* Homework */ = {
 			isa = PBXGroup;
 			children = (
 				1A64356622A5EEB30049376E /* BenchmarkTabVC.swift */,
@@ -76,15 +76,15 @@
 				1A64355922A5D3AC0049376E /* LaunchScreen.storyboard */,
 				1A64355C22A5D3AC0049376E /* Info.plist */,
 			);
-			path = Homework001;
+			path = Homework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A64354C22A5D3AB0049376E /* Homework001 */ = {
+		1A64354C22A5D3AB0049376E /* Homework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A64355F22A5D3AC0049376E /* Build configuration list for PBXNativeTarget "Homework001" */;
+			buildConfigurationList = 1A64355F22A5D3AC0049376E /* Build configuration list for PBXNativeTarget "Homework" */;
 			buildPhases = (
 				1A64354922A5D3AB0049376E /* Sources */,
 				1A64354A22A5D3AB0049376E /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = Homework001;
-			productName = Homework001;
-			productReference = 1A64354D22A5D3AB0049376E /* Homework001.app */;
+			name = Homework;
+			productName = Homework;
+			productReference = 1A64354D22A5D3AB0049376E /* Homework.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A64354822A5D3AB0049376E /* Build configuration list for PBXProject "Homework001" */;
+			buildConfigurationList = 1A64354822A5D3AB0049376E /* Build configuration list for PBXProject "Homework" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A64354C22A5D3AB0049376E /* Homework001 */,
+				1A64354C22A5D3AB0049376E /* Homework */,
 			);
 		};
 /* End PBXProject section */
@@ -312,12 +312,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2E99BVWU5T;
-				INFOPLIST_FILE = Homework001/Info.plist;
+				INFOPLIST_FILE = Homework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.Homework001;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.Homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,12 +330,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2E99BVWU5T;
-				INFOPLIST_FILE = Homework001/Info.plist;
+				INFOPLIST_FILE = Homework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.Homework001;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.Homework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A64354822A5D3AB0049376E /* Build configuration list for PBXProject "Homework001" */ = {
+		1A64354822A5D3AB0049376E /* Build configuration list for PBXProject "Homework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A64355D22A5D3AC0049376E /* Debug */,
@@ -354,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A64355F22A5D3AC0049376E /* Build configuration list for PBXNativeTarget "Homework001" */ = {
+		1A64355F22A5D3AC0049376E /* Build configuration list for PBXNativeTarget "Homework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A64356022A5D3AC0049376E /* Debug */,

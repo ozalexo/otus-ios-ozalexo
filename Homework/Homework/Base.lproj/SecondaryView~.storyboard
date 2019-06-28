@@ -16,7 +16,7 @@
                 <splitViewController id="ipn-ug-Llo" sceneMemberID="viewController">
                     <connections>
                         <segue destination="bN2-8F-J4J" kind="relationship" relationship="masterViewController" id="YjY-xa-FiU"/>
-                        <segue destination="5ph-PO-szX" kind="relationship" relationship="detailViewController" id="dRn-VT-cB0"/>
+                        <segue destination="5ph-PO-szX" kind="showDetail" id="io4-Pl-4TC"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nkm-2J-ia3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,7 +162,7 @@
         <!--Benchmark-->
         <scene sceneID="ToC-Wn-uEg">
             <objects>
-                <viewController id="pkp-gF-qHO" customClass="BenchmarkTabVC" customModule="Homework001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pkp-gF-qHO" customClass="BenchmarkTabVC" customModule="Homework" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nhg-yI-2jb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,12 +212,28 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="nSp-Ta-l6F" kind="relationship" relationship="rootViewController" id="iNt-XA-6m4"/>
+                        <segue destination="qtC-g5-URZ" kind="relationship" relationship="rootViewController" id="Mtn-TD-lgI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LD1-dv-DDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1251" y="379"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Irj-dw-o5D">
+            <objects>
+                <viewController id="qtC-g5-URZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Qz-MT-8h3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="h7v-5d-EzI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y1V-7M-mcW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNz-b3-Pdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-317" y="378"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Y2f-a4-yai">
@@ -240,7 +256,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="safeArea" id="dcQ-ep-GrC"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJw-TF-DDB" customClass="CustomProfileButton" customModule="Homework001" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJw-TF-DDB" customClass="CustomProfileButton" customModule="Homework" customModuleProvider="target">
                                 <rect key="frame" x="137" y="560" width="141" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -269,16 +285,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QxL-nK-aMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="550.72463768115949" y="-379.01785714285711"/>
-        </scene>
-        <!--Details-->
-        <scene sceneID="53t-2z-zAE">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Details" id="nSp-Ta-l6F" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="KNy-lb-Hr6"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vCe-jl-VCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-425" y="378"/>
         </scene>
     </scenes>
     <resources>
