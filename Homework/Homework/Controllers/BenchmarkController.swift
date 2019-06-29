@@ -10,7 +10,10 @@ import UIKit
 
 class BenchmarkController: UIViewController {
 
-    private var timer: Timer = Timer()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        addBehaviors(behaviors: [BenchmarkTimerBehavior()])
+    }
 
     @IBAction func showAlert(_ sender: Any) {
         // copy-paste from https://www.ioscreator.com/tutorials/display-alert-ios-tutorial
@@ -29,30 +32,6 @@ class BenchmarkController: UIViewController {
             animated: true,
             completion: nil
         )
-    }
-
-    /*
-     Добавить поведение afterAppearing c запуском таймера:
-     timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true).
-     В runTimed сделайте принт, например так print(Date())
-     */
-    override func viewDidAppear(_ animated: Bool) {
-        print("Star timer")
-        timer = Timer.scheduledTimer(
-            timeInterval: 1,
-            target: self,
-            selector: #selector(runTimed),
-            userInfo: nil,
-            repeats: true)
-    }
-
-    @objc func runTimed() {
-        print("Timer fired at \(Date())")
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        print("Stop timer")
-        timer.invalidate()
     }
 
 }
