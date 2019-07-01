@@ -1,14 +1,14 @@
 //
-//  BenchmarkBehaviour.swift
+//  UIViewControllerLifeCycle.swift
 //  Homework
 //
-//  Created by Alexey Ozerov on 29.06.2019.
+//  Created by Alexey Ozerov on 01.07.2019.
 //  Copyright © 2019 Alexey Ozerov. All rights reserved.
 //
 
 import UIKit
 
-protocol BenchmarkBehaviour {
+protocol ViewControllerLifecycleBehavior {
     func afterLoading(_ viewController: UIViewController)
 
     func beforeAppearing(_ viewController: UIViewController)
@@ -24,8 +24,7 @@ protocol BenchmarkBehaviour {
     func afterLayingOutSubviews(_ viewController: UIViewController)
 }
 
-extension BenchmarkBehaviour {
-
+extension ViewControllerLifecycleBehavior {
     func afterLoading(_ viewController: UIViewController) {}
 
     func beforeAppearing(_ viewController: UIViewController) {}
@@ -41,55 +40,29 @@ extension BenchmarkBehaviour {
     func afterLayingOutSubviews(_ viewController: UIViewController) {}
 }
 
-class BenchmarkTimerBehavior: BenchmarkBehaviour {
-
-    private var timer: Timer = Timer()
-
+extension UIViewController {
     /*
-     Добавить поведение afterAppearing c запуском таймера:
-     timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true).
-     В runTimed сделайте принт, например так print(Date())
+     Add behaviors to be hooked into this view controller’s lifecycle.
+
+     This method requires the view controller’s view to be loaded, so it’s best to call
+     in `viewDidLoad` to avoid it being loaded prematurely.
+
+     - parameter behaviors: Behaviors to be added.
      */
-    func afterAppearing(_ viewController: UIViewController) {
-        print("Starting timer")
-        timer = Timer.scheduledTimer(
-            timeInterval: 1,
-            target: self,
-            selector: #selector(runTimed),
-            userInfo: nil,
-            repeats: true)
-    }
-
-    // В runTimed сделайте принт, например так print(Date())
-    @objc func runTimed() {
-        print("Timer fired at \(Date())")
-    }
-
-    // На beforeDisappearing вызвать таймеру invalidate(),
-    // чтобы на других экранах он не тикал и не принтил
-    func beforeDisappearing(_ viewController: UIViewController) {
-        print("Stopping timer")
-        timer.invalidate()
-    }
-}
-
-extension BenchmarkController {
-
-    func addBehaviors(behaviors: [BenchmarkBehaviour]) {
-        let behaviorViewController = BenchmarkBehaviorViewController(behaviors: behaviors)
+    func addBehaviors(behaviors: [ViewControllerLifecycleBehavior]) {
+        let behaviorViewController = LifecycleBehaviorViewController(behaviors: behaviors)
 
         addChild(behaviorViewController)
         view.addSubview(behaviorViewController.view)
         behaviorViewController.didMove(toParent: self)
     }
 
-    private final class BenchmarkBehaviorViewController: UIViewController {
-        private let behaviors: [BenchmarkBehaviour]
-        private var timer: Timer = Timer()
+    private final class LifecycleBehaviorViewController: UIViewController {
+        private let behaviors: [ViewControllerLifecycleBehavior]
 
         // MARK: - Initialization
 
-        init(behaviors: [BenchmarkBehaviour]) {
+        init(behaviors: [ViewControllerLifecycleBehavior]) {
             self.behaviors = behaviors
 
             super.init(nibName: nil, bundle: nil)
@@ -104,7 +77,6 @@ extension BenchmarkController {
         override func viewDidLoad() {
             super.viewDidLoad()
 
-            // Why we need it here?
             view.isHidden = true
 
             applyBehaviors { behavior, viewController in
@@ -162,7 +134,7 @@ extension BenchmarkController {
 
         // MARK: - Private
 
-        private func applyBehaviors(body: (_ behavior: BenchmarkBehaviour, _ viewController: UIViewController) -> ()) {
+        private func applyBehaviors(body: (_ behavior: ViewControllerLifecycleBehavior, _ viewController: UIViewController) -> ()) {
             guard let parentViewController = parent else { return }
 
             for behavior in behaviors {
@@ -170,7 +142,4 @@ extension BenchmarkController {
             }
         }
     }
-
 }
-
-

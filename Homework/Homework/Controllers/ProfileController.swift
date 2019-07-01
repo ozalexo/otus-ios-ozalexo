@@ -10,12 +10,31 @@ import UIKit
 
 class ProfileController: UIViewController {
 
+    var currentStatusbarStyle = UIStatusBarStyle.default
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addBehaviors(behaviors: [ProfileStatusBarBehaviour()])
     }
-    
+
+    var isDark = false {
+        didSet {
+            setNeedsStatusBarAppearanceUpdate()
+        }
+    }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return isDark ? .lightContent : .default
+    }
+
+    func toggleStatusBarStyle() {
+        if isDark {
+            print("Toggling StatusBar theme from Dark to Light")
+        } else {
+            print("Toggling StatusBar theme from Light to Dark")
+        }
+        isDark.toggle()
+    }
 
     /*
     // MARK: - Navigation
