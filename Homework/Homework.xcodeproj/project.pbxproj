@@ -17,6 +17,7 @@
 		1A64357322A5FFC70049376E /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A64357122A5FFC70049376E /* Details.storyboard */; };
 		1A98767C22C9988500C91D18 /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A98767B22C9988500C91D18 /* ViewControllerLifecycleBehavior.swift */; };
 		1A98767E22C99DA000C91D18 /* ChildForStatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A98767D22C99DA000C91D18 /* ChildForStatusBarStyle.swift */; };
+		1AB4B0C622C9AD8C00FEC6E7 /* FeedLastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB4B0C522C9AD8C00FEC6E7 /* FeedLastViewController.swift */; };
 		1AE9206922A6074E009D418C /* TestXibComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE9206822A6074E009D418C /* TestXibComponent.xib */; };
 		1AE9206B22A6079E009D418C /* TestXibComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE9206A22A6079E009D418C /* TestXibComponent.swift */; };
 		1AF30C8D22C6CE8A00DA30B4 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF30C8C22C6CE8A00DA30B4 /* ProfileController.swift */; };
@@ -41,6 +42,7 @@
 		1A64357222A5FFC70049376E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Homework/Base.lproj/Details.storyboard; sourceTree = "<group>"; };
 		1A98767B22C9988500C91D18 /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
 		1A98767D22C99DA000C91D18 /* ChildForStatusBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildForStatusBarStyle.swift; sourceTree = "<group>"; };
+		1AB4B0C522C9AD8C00FEC6E7 /* FeedLastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLastViewController.swift; sourceTree = "<group>"; };
 		1AE9206822A6074E009D418C /* TestXibComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibComponent.xib; sourceTree = "<group>"; };
 		1AE9206A22A6079E009D418C /* TestXibComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXibComponent.swift; sourceTree = "<group>"; };
 		1AF30C8C22C6CE8A00DA30B4 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
@@ -113,10 +115,19 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		1AB9365E22C6BE9900B25E59 /* Controllers */ = {
+		1AB4B0C422C9AD6400FEC6E7 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
 				1AF30C8E22C6CEBA00DA30B4 /* FeedController.swift */,
+				1AB4B0C522C9AD8C00FEC6E7 /* FeedLastViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		1AB9365E22C6BE9900B25E59 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1AB4B0C422C9AD6400FEC6E7 /* Feed */,
 				1A64356622A5EEB30049376E /* BenchmarkController.swift */,
 				1AF30C8C22C6CE8A00DA30B4 /* ProfileController.swift */,
 				1A64355222A5D3AB0049376E /* ViewController.swift */,
@@ -224,6 +235,7 @@
 			files = (
 				1A64355322A5D3AB0049376E /* ViewController.swift in Sources */,
 				1A64355122A5D3AB0049376E /* AppDelegate.swift in Sources */,
+				1AB4B0C622C9AD8C00FEC6E7 /* FeedLastViewController.swift in Sources */,
 				1AE9206B22A6079E009D418C /* TestXibComponent.swift in Sources */,
 				1A98767E22C99DA000C91D18 /* ChildForStatusBarStyle.swift in Sources */,
 				1AF30C9622C6DA8D00DA30B4 /* BenchmarkTimerBehaviour.swift in Sources */,
