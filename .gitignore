@@ -16,6 +16,7 @@
 xcuserdata/
 project.xcworkspace/
 DerivedData/
+*.xcuserstate
 
 # build products
 build/
