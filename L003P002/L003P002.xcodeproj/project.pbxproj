@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1A0D05DD22DD906D005B2489 /* L003P001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L003P001.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0D05DD22DD906D005B2489 /* L003P002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L003P002.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0D05E022DD906D005B2489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A0D05E222DD906D005B2489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A0D05E522DD906D005B2489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		1A0D05D422DD906D005B2489 = {
 			isa = PBXGroup;
 			children = (
-				1A0D05DF22DD906D005B2489 /* L003P001 */,
+				1A0D05DF22DD906D005B2489 /* L003P002 */,
 				1A0D05DE22DD906D005B2489 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		1A0D05DE22DD906D005B2489 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A0D05DD22DD906D005B2489 /* L003P001.app */,
+				1A0D05DD22DD906D005B2489 /* L003P002.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A0D05DF22DD906D005B2489 /* L003P001 */ = {
+		1A0D05DF22DD906D005B2489 /* L003P002 */ = {
 			isa = PBXGroup;
 			children = (
 				1A0D05E022DD906D005B2489 /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				1A0D05E922DD906F005B2489 /* LaunchScreen.storyboard */,
 				1A0D05EC22DD906F005B2489 /* Info.plist */,
 			);
-			path = L003P001;
+			path = L003P002;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A0D05DC22DD906D005B2489 /* L003P001 */ = {
+		1A0D05DC22DD906D005B2489 /* L003P002 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A0D05EF22DD906F005B2489 /* Build configuration list for PBXNativeTarget "L003P001" */;
+			buildConfigurationList = 1A0D05EF22DD906F005B2489 /* Build configuration list for PBXNativeTarget "L003P002" */;
 			buildPhases = (
 				1A0D05D922DD906D005B2489 /* Sources */,
 				1A0D05DA22DD906D005B2489 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = L003P001;
-			productName = L003P001;
-			productReference = 1A0D05DD22DD906D005B2489 /* L003P001.app */;
+			name = L003P002;
+			productName = L003P002;
+			productReference = 1A0D05DD22DD906D005B2489 /* L003P002.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A0D05D822DD906D005B2489 /* Build configuration list for PBXProject "L003P001" */;
+			buildConfigurationList = 1A0D05D822DD906D005B2489 /* Build configuration list for PBXProject "L003P002" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A0D05DC22DD906D005B2489 /* L003P001 */,
+				1A0D05DC22DD906D005B2489 /* L003P002 */,
 			);
 		};
 /* End PBXProject section */
@@ -284,12 +284,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2E99BVWU5T;
-				INFOPLIST_FILE = L003P001/Info.plist;
+				INFOPLIST_FILE = L003P002/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.L003P001;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.L003P002;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,12 +302,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2E99BVWU5T;
-				INFOPLIST_FILE = L003P001/Info.plist;
+				INFOPLIST_FILE = L003P002/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.L003P001;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.ozerov.L003P002;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A0D05D822DD906D005B2489 /* Build configuration list for PBXProject "L003P001" */ = {
+		1A0D05D822DD906D005B2489 /* Build configuration list for PBXProject "L003P002" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A0D05ED22DD906F005B2489 /* Debug */,
@@ -326,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A0D05EF22DD906F005B2489 /* Build configuration list for PBXNativeTarget "L003P001" */ = {
+		1A0D05EF22DD906F005B2489 /* Build configuration list for PBXNativeTarget "L003P002" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A0D05F022DD906F005B2489 /* Debug */,
