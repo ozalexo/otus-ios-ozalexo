@@ -209,7 +209,18 @@
                     <view key="view" contentMode="scaleToFill" id="oUO-m2-CuS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4O-Uy-P9c">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v4O-Uy-P9c" firstAttribute="top" secondItem="Uv9-wy-YwH" secondAttribute="top" id="4Au-Ya-Vzd"/>
+                            <constraint firstItem="v4O-Uy-P9c" firstAttribute="trailing" secondItem="Uv9-wy-YwH" secondAttribute="trailing" id="4UL-5Y-84y"/>
+                            <constraint firstItem="v4O-Uy-P9c" firstAttribute="leading" secondItem="Uv9-wy-YwH" secondAttribute="leading" id="6Yi-rg-5e0"/>
+                            <constraint firstItem="v4O-Uy-P9c" firstAttribute="bottom" secondItem="Uv9-wy-YwH" secondAttribute="bottom" id="dvh-RI-2JJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uv9-wy-YwH"/>
                     </view>
                 </viewController>
