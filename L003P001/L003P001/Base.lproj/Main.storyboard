@@ -213,12 +213,18 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4O-Uy-P9c">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dyA-8Q-Mln">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dyA-8Q-Mln">
                                         <rect key="frame" x="0.0" y="158" width="414" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dyA-8Q-Mln" secondAttribute="bottom" constant="488" id="6ce-gA-gQs"/>
+                                    <constraint firstAttribute="trailing" secondItem="dyA-8Q-Mln" secondAttribute="trailing" id="Hcp-8c-ZAP"/>
+                                    <constraint firstItem="dyA-8Q-Mln" firstAttribute="leading" secondItem="v4O-Uy-P9c" secondAttribute="leading" id="MSM-uA-B70"/>
+                                    <constraint firstItem="dyA-8Q-Mln" firstAttribute="top" secondItem="v4O-Uy-P9c" secondAttribute="top" constant="158" id="wVV-ss-bk1"/>
+                                    <constraint firstItem="dyA-8Q-Mln" firstAttribute="width" secondItem="v4O-Uy-P9c" secondAttribute="width" id="xX8-KN-EPS"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
