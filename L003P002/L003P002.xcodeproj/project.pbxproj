@@ -16,7 +16,7 @@
 		1A7B4E1822DF00BD00CCDED3 /* ViewControllerLifeCycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4E1722DF00BD00CCDED3 /* ViewControllerLifeCycleBehavior.swift */; };
 		1A7B4E1C22DF13BD00CCDED3 /* Diagram.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7B4E1B22DF13BD00CCDED3 /* Diagram.xcassets */; };
 		1A7B4E1E22DF150000CCDED3 /* DiagramImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4E1D22DF150000CCDED3 /* DiagramImageProvider.swift */; };
-		1A7B4E2022DF158700CCDED3 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4E1F22DF158700CCDED3 /* Services.swift */; };
+		1A7B4E2022DF158700CCDED3 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4E1F22DF158700CCDED3 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		1A7B4E1722DF00BD00CCDED3 /* ViewControllerLifeCycleBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifeCycleBehavior.swift; sourceTree = "<group>"; };
 		1A7B4E1B22DF13BD00CCDED3 /* Diagram.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Diagram.xcassets; sourceTree = "<group>"; };
 		1A7B4E1D22DF150000CCDED3 /* DiagramImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramImageProvider.swift; sourceTree = "<group>"; };
-		1A7B4E1F22DF158700CCDED3 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		1A7B4E1F22DF158700CCDED3 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1A7B4E1D22DF150000CCDED3 /* DiagramImageProvider.swift */,
-				1A7B4E1F22DF158700CCDED3 /* Services.swift */,
+				1A7B4E1F22DF158700CCDED3 /* Service.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A0D05E322DD906D005B2489 /* ViewController.swift in Sources */,
-				1A7B4E2022DF158700CCDED3 /* Services.swift in Sources */,
+				1A7B4E2022DF158700CCDED3 /* Service.swift in Sources */,
 				1A0D05E122DD906D005B2489 /* AppDelegate.swift in Sources */,
 				1A7B4E1E22DF150000CCDED3 /* DiagramImageProvider.swift in Sources */,
 				1A7B4E1522DEFE9900CCDED3 /* DiagramViewController.swift in Sources */,

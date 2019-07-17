@@ -7,6 +7,9 @@
 # Lesson 003. Practice 002.
 
 ## Additional links
+
+### Constraints etc.
+
 * [Apple Doc Archive: Simple Constraints](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/WorkingwithSimpleConstraints.html)
 * [Apple Doc Archive: Anatomy of a Constraint](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/AnatomyofaConstraint.html#//apple_ref/doc/uid/TP40010853-CH9-SW1)
 * [Introduction to Auto Layout](https://www.appcoda.com/learnswift/auto-layout-intro.html)
