@@ -8,21 +8,33 @@
 
 import UIKit
 
-//MARK: - View Controller
+final class InfinityScrollBehavior: ViewControllerLifecycleBehavior {
 
-final class InfinityScroll: ViewControllerLifecycleBehavior {
+    private var target: InfinityScrollable
+
+    init(target: InfinityScrollable) {
+        self.target = target
+    }
 
 }
 
+protocol InfinityScrollable {
 
-class DiagramViewController: UISplitViewController {
+    var scrollView: UIScrollView! { get }
+
+}
+
+//MARK: - View Controller
+
+final class DiagramViewController: UIViewController, InfinityScrollable {
+
+    @IBOutlet var scrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        addBehaviors(behaviors: [InfinityScrollBehavior(target: self)])
     }
-    
 
     /*
     // MARK: - Navigation
@@ -33,5 +45,9 @@ class DiagramViewController: UISplitViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+}
+
+extension DiagramViewController: UIScrollViewDelegate {
 
 }

@@ -177,7 +177,7 @@
                                         <rect key="frame" x="0.0" y="816" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hPp-sg-m1a" id="ywn-vN-RGa">
-                                            <rect key="frame" x="0.0" y="0.0" width="896" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -198,7 +198,7 @@
         <!--Diagram-->
         <scene sceneID="vea-8y-xaC">
             <objects>
-                <viewController title="Diagram" id="aXV-IX-N1h" sceneMemberID="viewController">
+                <viewController title="Diagram" id="aXV-IX-N1h" customClass="DiagramViewController" customModule="L003P002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="meV-KY-5Gr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,8 +206,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKu-aX-AgL">
                                 <rect key="frame" x="0.0" y="268" width="414" height="414"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihb-vH-BCa">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihb-vH-BCa">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="aXV-IX-N1h" id="mMN-5y-6aw"/>
+                                        </connections>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.52279114422457251" green="0.079486659349314315" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -231,6 +234,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3gg-nM-5g5"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Ihb-vH-BCa" id="S0k-F0-4ac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="shF-pI-zOL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
