@@ -7,14 +7,21 @@ class MyViewController : UIViewController {
     override func loadView() {
         let view = UIView()
         view.backgroundColor = .white
-
-        let label = UILabel()
-        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
-        label.text = "Hello World!"
-        label.textColor = .black
-        
-        view.addSubview(label)
         self.view = view
+    }
+
+    override func viewDidLayoutSubviews() {
+        setup()
+    }
+
+    func setup () {
+
+        let imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        let img = UIImage(named: "owl.jpg")
+        imgView.contentMode = .scaleAspectFit
+        imgView.image = img
+        view.addSubview(imgView)
+
     }
 }
 
