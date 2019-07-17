@@ -21,23 +21,22 @@ class MyViewController : UIViewController {
         let img = UIImage(named: "owl.jpg")
         imgView.contentMode = .scaleAspectFit
         imgView.image = img
+        imgView.backgroundColor = .gray
 
         // Text label
         let textLabel = UILabel()
         textLabel.backgroundColor = .yellow
         textLabel.text = "ThinKong owl"
-//        textLabel.translatesAutoresizingMaskIntoConstraints = true
         textLabel.widthAnchor.constraint(equalToConstant: 400).isActive = true
         textLabel.heightAnchor.constraint(equalToConstant: 24).isActive = true
         textLabel.textAlignment = .center
 
         // Stack
         let stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 400))
-        stackView.backgroundColor = .green
         stackView.axis = .vertical
-        stackView.distribution = .equalCentering
+        stackView.distribution = .equalSpacing
         stackView.alignment = .center
-        stackView.spacing = 5
+        stackView.spacing = 10
 
         stackView.addArrangedSubview(imgView)
         stackView.addArrangedSubview(textLabel)
