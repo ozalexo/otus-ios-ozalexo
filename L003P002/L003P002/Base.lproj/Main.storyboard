@@ -206,7 +206,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oKu-aX-AgL">
                                 <rect key="frame" x="0.0" y="268" width="414" height="414"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihb-vH-BCa">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihb-vH-BCa">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                         <connections>
                                             <outlet property="delegate" destination="aXV-IX-N1h" id="mMN-5y-6aw"/>

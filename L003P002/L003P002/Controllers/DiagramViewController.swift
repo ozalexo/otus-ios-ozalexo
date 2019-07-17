@@ -24,6 +24,14 @@ final class InfinityScrollBehavior: ViewControllerLifecycleBehavior {
 
     func afterLayingOutSubviews(_ viewController: UIViewController) {
         delegate.scrollViewSize = delegate.scrollView.frame
+        delegate.scrollView.contentSize = CGSize(
+            width: delegate.scrollViewSize.width * 3,
+            height: delegate.scrollViewSize.height
+        )
+        delegate.scrollView.contentOffset = CGPoint(
+            x: delegate.scrollViewSize.width,
+            y: 0
+        )
         delegate.layoutImages()
     }
 
@@ -102,5 +110,41 @@ final class DiagramViewController: UIViewController, InfinityScrollable {
 // MARK: - Delegate
 
 extension DiagramViewController: UIScrollViewDelegate {
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        dragging = false
+    }
+
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        dragging = true
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if !dragging {
+            return
+        }
+
+        let offsetX = scrollView.contentOffset.x
+
+        // Right scrolling direction
+        if (offsetX > scrollView.frame.size.width * 1.5) {
+            if let newImage = Service.diagramImageProvider.random() {
+                images.remove(at: 0)
+                images.append(newImage)
+                layoutImages()
+                scrollView.contentOffset.x -= scrollViewSize.width
+            }
+        }
+         // Left scrolling direction
+        if (offsetX < scrollView.frame.size.width * 0.5) {
+            if let newImage = Service.diagramImageProvider.random() {
+                images.removeLast()
+                images.insert(newImage, at: 0)
+                layoutImages()
+                scrollView.contentOffset.x += scrollViewSize.width
+            }
+        }
+
+    }
 
 }
