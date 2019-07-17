@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Services {
+class Service {
 
     // Closure
     static var diagramImageProvider: DiagramImageProvider = {
