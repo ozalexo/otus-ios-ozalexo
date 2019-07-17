@@ -13,3 +13,5 @@
 * [Auto Layout in iOS: A Comprehensive 7 Steps Roadmap](https://matteomanferdini.com/ios-auto-layout/)
 * [Adaptive Layout Tutorial in iOS 12: Getting Started](https://www.raywenderlich.com/1343912-adaptive-layout-tutorial-in-ios-12-getting-started)
 * [How to Constrain a Square View with Auto Layout in iOS](https://spin.atomicobject.com/2015/06/03/ios-square-view-auto-layout/)
+* [Auto Layout Tutorial (2019) - Lesson 2](https://www.youtube.com/watch?v=emojd8GFB0o)
+* [Auto Layout (Lesson 2) Bonus Training](https://www.youtube.com/watch?v=2tqkuGETgXg)

@@ -12,6 +12,9 @@
 		1A0D05E622DD906D005B2489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D05E422DD906D005B2489 /* Main.storyboard */; };
 		1A0D05E822DD906F005B2489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D05E722DD906F005B2489 /* Assets.xcassets */; };
 		1A0D05EB22DD906F005B2489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0D05E922DD906F005B2489 /* LaunchScreen.storyboard */; };
+		1A7B4E1522DEFE9900CCDED3 /* DiagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4E1422DEFE9900CCDED3 /* DiagramViewController.swift */; };
+		1A7B4E1822DF00BD00CCDED3 /* ViewControllerLifeCycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4E1722DF00BD00CCDED3 /* ViewControllerLifeCycleBehavior.swift */; };
+		1A7B4E1C22DF13BD00CCDED3 /* Diagram.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7B4E1B22DF13BD00CCDED3 /* Diagram.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1A0D05E722DD906F005B2489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A0D05EA22DD906F005B2489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A0D05EC22DD906F005B2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7B4E1422DEFE9900CCDED3 /* DiagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramViewController.swift; sourceTree = "<group>"; };
+		1A7B4E1722DF00BD00CCDED3 /* ViewControllerLifeCycleBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifeCycleBehavior.swift; sourceTree = "<group>"; };
+		1A7B4E1B22DF13BD00CCDED3 /* Diagram.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Diagram.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		1A0D05DF22DD906D005B2489 /* L003P002 */ = {
 			isa = PBXGroup;
 			children = (
+				1A7B4E1A22DF137900CCDED3 /* Services */,
+				1A7B4E1622DEFEA400CCDED3 /* Bahavior */,
+				1A7B4E1922DF00FA00CCDED3 /* Controllers */,
 				1A0D05E022DD906D005B2489 /* AppDelegate.swift */,
-				1A0D05E222DD906D005B2489 /* ViewController.swift */,
 				1A0D05E422DD906D005B2489 /* Main.storyboard */,
 				1A0D05E722DD906F005B2489 /* Assets.xcassets */,
+				1A7B4E1B22DF13BD00CCDED3 /* Diagram.xcassets */,
 				1A0D05E922DD906F005B2489 /* LaunchScreen.storyboard */,
 				1A0D05EC22DD906F005B2489 /* Info.plist */,
 			);
 			path = L003P002;
+			sourceTree = "<group>";
+		};
+		1A7B4E1622DEFEA400CCDED3 /* Bahavior */ = {
+			isa = PBXGroup;
+			children = (
+				1A7B4E1722DF00BD00CCDED3 /* ViewControllerLifeCycleBehavior.swift */,
+			);
+			path = Bahavior;
+			sourceTree = "<group>";
+		};
+		1A7B4E1922DF00FA00CCDED3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A7B4E1422DEFE9900CCDED3 /* DiagramViewController.swift */,
+				1A0D05E222DD906D005B2489 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A7B4E1A22DF137900CCDED3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A0D05EB22DD906F005B2489 /* LaunchScreen.storyboard in Resources */,
+				1A7B4E1C22DF13BD00CCDED3 /* Diagram.xcassets in Resources */,
 				1A0D05E822DD906F005B2489 /* Assets.xcassets in Resources */,
 				1A0D05E622DD906D005B2489 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +171,8 @@
 			files = (
 				1A0D05E322DD906D005B2489 /* ViewController.swift in Sources */,
 				1A0D05E122DD906D005B2489 /* AppDelegate.swift in Sources */,
+				1A7B4E1522DEFE9900CCDED3 /* DiagramViewController.swift in Sources */,
+				1A7B4E1822DF00BD00CCDED3 /* ViewControllerLifeCycleBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
