@@ -8,6 +8,22 @@
 
 import UIKit
 
+protocol InfinityScrollable {
+
+    var images: [UIImage] { get set }
+    var imageViews: [UIImageView] { get }
+
+    var scrollView: UIScrollView! { get }
+    var scrollViewSize: CGRect { get set }
+
+    func addImageViews()
+
+    func layoutImages()
+
+}
+
+// MARK: - Behavior
+
 final class InfinityScrollBehavior: ViewControllerLifecycleBehavior {
 
     private var delegate: InfinityScrollable
@@ -19,7 +35,7 @@ final class InfinityScrollBehavior: ViewControllerLifecycleBehavior {
     // MARK: - Life Cycle
 
     func afterLoading(_ viewController: UIViewController) {
-        addImageViews()
+        delegate.addImageViews()
     }
 
     func afterLayingOutSubviews(_ viewController: UIViewController) {
@@ -34,28 +50,6 @@ final class InfinityScrollBehavior: ViewControllerLifecycleBehavior {
         )
         delegate.layoutImages()
     }
-
-    func addImageViews() {
-        (0..<3).forEach({ i in
-            if let img = Service.diagramImageProvider.random() {
-                delegate.images.append(img)
-                delegate.imageViews[i].image = img
-                delegate.scrollView.addSubview(delegate.imageViews[i])
-            }
-        })
-    }
-}
-
-protocol InfinityScrollable {
-
-    var images: [UIImage] { get set }
-    var imageViews: [UIImageView] { get }
-
-    var scrollView: UIScrollView! { get }
-    var scrollViewSize: CGRect { get set }
-
-    func layoutImages()
-
 }
 
 //MARK: - View Controller
@@ -103,6 +97,16 @@ final class DiagramViewController: UIViewController, InfinityScrollable {
                 height: scrollViewSize.height
             )
         }
+    }
+
+    func addImageViews() {
+        (0..<3).forEach({ i in
+            if let img = Service.diagramImageProvider.random() {
+                images.append(img)
+                imageViews[i].image = img
+                scrollView.addSubview(imageViews[i])
+            }
+        })
     }
 
 }
