@@ -17,5 +17,7 @@ class MyViewController : UIViewController {
         self.view = view
     }
 }
-// Present the view controller in the Live View window
-PlaygroundPage.current.liveView = MyViewController()
+
+// To be able to test with different sizes (a.k.a. different iPhones)
+let vc = MyViewController()
+PlaygroundPage.current.liveView = vc
