@@ -12,6 +12,13 @@ final class ViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
 
+    @objc func changeLayout() {
+        collectionView.setCollectionViewLayout(
+            StagLayout(widthHeightRatios: [(1.0, 1.0), (0.5, 0.5), (0.5, 1.5), (0.5, 1.0)], itemSpacing: 4),
+            animated: true
+        )
+    }
+
     // MARK: - Datasource
 
     private var dataSource: [Algo] = Services.algoProvider.sortings()
@@ -22,6 +29,13 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         
         collectionView.register(AlgoCollectionViewCell.nib, forCellWithReuseIdentifier: AlgoCollectionViewCell.reusableID)
+        changeLayout()
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .refresh,
+            target: self,
+            action: #selector(changeLayout)
+        )
     }
     
 }
@@ -32,6 +46,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         return dataSource.count
     }
     
+    /// Bad implementation: calling each time on scroll, to be improved
+    ///
+    /// - Parameters:
+    ///   - collectionView: UICollectionView
+    ///   - indexPath: cell's index
+    /// - Returns: UICollectionViewCell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: AlgoCollectionViewCell.reusableID,

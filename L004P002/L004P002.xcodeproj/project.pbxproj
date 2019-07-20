@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1A13858022E3909100D39536 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13857F22E3909100D39536 /* UIColor.swift */; };
+		1A13858422E3969600D39536 /* StagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13858322E3969600D39536 /* StagLayout.swift */; };
+		1A13858622E3970A00D39536 /* StagLayoutFrameHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13858522E3970A00D39536 /* StagLayoutFrameHolder.swift */; };
+		1A13858822E3973D00D39536 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13858722E3973D00D39536 /* Array.swift */; };
 		1A7B4E4C22DF4DAA00CCDED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4E4B22DF4DAA00CCDED3 /* AppDelegate.swift */; };
 		1A7B4E4E22DF4DAA00CCDED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4E4D22DF4DAA00CCDED3 /* ViewController.swift */; };
 		1A7B4E5122DF4DAA00CCDED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7B4E4F22DF4DAA00CCDED3 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		1A13857F22E3909100D39536 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		1A13858322E3969600D39536 /* StagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagLayout.swift; sourceTree = "<group>"; };
+		1A13858522E3970A00D39536 /* StagLayoutFrameHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagLayoutFrameHolder.swift; sourceTree = "<group>"; };
+		1A13858722E3973D00D39536 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		1A7B4E4822DF4DAA00CCDED3 /* L004P002.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L004P002.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7B4E4B22DF4DAA00CCDED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A7B4E4D22DF4DAA00CCDED3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,8 +71,31 @@
 			isa = PBXGroup;
 			children = (
 				1A13857F22E3909100D39536 /* UIColor.swift */,
+				1A13858722E3973D00D39536 /* Array.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A13858122E3959200D39536 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A13858222E3967D00D39536 /* Layouts */,
+				1A7B4E4D22DF4DAA00CCDED3 /* ViewController.swift */,
+				1A7B4E5D22DF51B800CCDED3 /* AlgoCollectionViewCell.swift */,
+				1A7B4E5E22DF51B800CCDED3 /* AlgoCollectionViewCell.xib */,
+				1A7B4E4F22DF4DAA00CCDED3 /* Main.storyboard */,
+				1A7B4E5422DF4DAC00CCDED3 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A13858222E3967D00D39536 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				1A13858322E3969600D39536 /* StagLayout.swift */,
+				1A13858522E3970A00D39536 /* StagLayoutFrameHolder.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 		1A7B4E3F22DF4DAA00CCDED3 = {
@@ -88,17 +117,13 @@
 		1A7B4E4A22DF4DAA00CCDED3 /* L004P002 */ = {
 			isa = PBXGroup;
 			children = (
+				1A13858122E3959200D39536 /* Views */,
 				1A13857E22E3907800D39536 /* Extensions */,
 				1A13857B22E38DDF00D39536 /* Providers */,
 				1A13857A22E38D8200D39536 /* Services */,
 				1A7B4E4B22DF4DAA00CCDED3 /* AppDelegate.swift */,
-				1A7B4E4D22DF4DAA00CCDED3 /* ViewController.swift */,
-				1A7B4E4F22DF4DAA00CCDED3 /* Main.storyboard */,
 				1A7B4E5222DF4DAC00CCDED3 /* Assets.xcassets */,
-				1A7B4E5422DF4DAC00CCDED3 /* LaunchScreen.storyboard */,
 				1A7B4E5722DF4DAC00CCDED3 /* Info.plist */,
-				1A7B4E5D22DF51B800CCDED3 /* AlgoCollectionViewCell.swift */,
-				1A7B4E5E22DF51B800CCDED3 /* AlgoCollectionViewCell.xib */,
 			);
 			path = L004P002;
 			sourceTree = "<group>";
@@ -175,10 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A13858822E3973D00D39536 /* Array.swift in Sources */,
 				1A7B4E4E22DF4DAA00CCDED3 /* ViewController.swift in Sources */,
 				1A13858022E3909100D39536 /* UIColor.swift in Sources */,
 				1A7B4E5F22DF51B800CCDED3 /* AlgoCollectionViewCell.swift in Sources */,
 				1A7B4E6422DF54F300CCDED3 /* Services.swift in Sources */,
+				1A13858622E3970A00D39536 /* StagLayoutFrameHolder.swift in Sources */,
+				1A13858422E3969600D39536 /* StagLayout.swift in Sources */,
 				1A7B4E4C22DF4DAA00CCDED3 /* AppDelegate.swift in Sources */,
 				1A7B4E6222DF54CF00CCDED3 /* AlgoProvider.swift in Sources */,
 			);
